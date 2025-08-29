@@ -49,7 +49,7 @@ Database-specific parameters:
 For OpenSearch:
 
 - opensearch.index → Target index;
-- opensearch.nodes → List of OpenSearch nodes;
+- opensearch.nodes → List of OpenSearch nodes
 - opensearch.credentials → Username & password.
 
 ## 📝 Templating
@@ -65,7 +65,7 @@ Available functions:
 
 ### Example
 
-```json
+```
 {
   "timestamp": "{{date}}",
   "level": "{{oneOf "INFO" "WARN" "ERROR" "DEBUG"}}",
