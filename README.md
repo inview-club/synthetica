@@ -39,29 +39,29 @@ Example:
 
 Global parameters:
 
-- workers → Number of concurrent workers;
-- documents_amount → Number of documents per request;
-- iterations → Number of requests per worker;
-- body_template_file → Path to the JSON log template.
+- **workers** → Number of concurrent workers;
+- **documents_amount** → Number of documents per request;
+- **iterations** → Number of requests per worker;
+- **body_template_file** → Path to the JSON log template.
 
 Database-specific parameters:
 
 For OpenSearch:
 
-- opensearch.index → Target index;
-- opensearch.nodes → List of OpenSearch nodes
-- opensearch.credentials → Username & password.
+- **index** → Target index;
+- **nodes** → List of OpenSearch nodes
+- **credentials** → Username & password.
 
 ## 📝 Templating
 
-Synthetica uses Go’s text/template engine with custom helpers.
+Synthetica uses Go **text/template** engine with custom helpers.
 
 Available functions:
 
-- uuid → Generates a random UUID.
-- timestamp → Current timestamp in milliseconds.
-- date → Current timestamp in RFC3339Nano.
-- oneOf "a" "b" "c" → Picks a random option from the provided list.
+- **uuid** → Generates a random UUID.
+- **timestamp** → Current timestamp in milliseconds.
+- **date** → Current timestamp in RFC3339Nano.
+- **oneOf** "a" "b" "c" → Picks a random option from the provided list.
 
 ### Example
 
